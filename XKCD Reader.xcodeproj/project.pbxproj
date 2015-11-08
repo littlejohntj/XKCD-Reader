@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		612724BA1BEEEAD400D0E268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612724B91BEEEAD400D0E268 /* AppDelegate.swift */; };
-		612724BC1BEEEAD400D0E268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612724BB1BEEEAD400D0E268 /* ViewController.swift */; };
 		612724BF1BEEEAD400D0E268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612724BD1BEEEAD400D0E268 /* Main.storyboard */; };
 		612724C11BEEEAD400D0E268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612724C01BEEEAD400D0E268 /* Assets.xcassets */; };
 		612724C41BEEEAD400D0E268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612724C21BEEEAD400D0E268 /* LaunchScreen.storyboard */; };
 		612724CF1BEEEAD400D0E268 /* XKCD_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612724CE1BEEEAD400D0E268 /* XKCD_ReaderTests.swift */; };
 		612724DA1BEEEAD400D0E268 /* XKCD_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612724D91BEEEAD400D0E268 /* XKCD_ReaderUITests.swift */; };
+		6138A1671BEFBD54006C4842 /* ExploreComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6138A1661BEFBD54006C4842 /* ExploreComicViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		612724B61BEEEAD400D0E268 /* XKCD Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XKCD Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		612724B91BEEEAD400D0E268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		612724BB1BEEEAD400D0E268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		612724BE1BEEEAD400D0E268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		612724C01BEEEAD400D0E268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612724C31BEEEAD400D0E268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		612724D51BEEEAD400D0E268 /* XKCD ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XKCD ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		612724D91BEEEAD400D0E268 /* XKCD_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCD_ReaderUITests.swift; sourceTree = "<group>"; };
 		612724DB1BEEEAD400D0E268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6138A1661BEFBD54006C4842 /* ExploreComicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreComicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				612724B91BEEEAD400D0E268 /* AppDelegate.swift */,
-				612724BB1BEEEAD400D0E268 /* ViewController.swift */,
 				612724BD1BEEEAD400D0E268 /* Main.storyboard */,
+				6138A1661BEFBD54006C4842 /* ExploreComicViewController.swift */,
 				612724C01BEEEAD400D0E268 /* Assets.xcassets */,
 				612724C21BEEEAD400D0E268 /* LaunchScreen.storyboard */,
 				612724C51BEEEAD400D0E268 /* Info.plist */,
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				612724BC1BEEEAD400D0E268 /* ViewController.swift in Sources */,
+				6138A1671BEFBD54006C4842 /* ExploreComicViewController.swift in Sources */,
 				612724BA1BEEEAD400D0E268 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +483,7 @@
 				612724E01BEEEAD400D0E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		612724E11BEEEAD400D0E268 /* Build configuration list for PBXNativeTarget "XKCD ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				612724E31BEEEAD400D0E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		612724E41BEEEAD400D0E268 /* Build configuration list for PBXNativeTarget "XKCD ReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +501,7 @@
 				612724E61BEEEAD400D0E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
