@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 var arrayOfFavoriteComics:[String] = [String]()
 var arrayOfFavoriteComicTitles:[String] = [String]()
@@ -124,7 +125,9 @@ class ExploreComicViewController: UIViewController, UIScrollViewDelegate {
                 
             urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 
-            print(urlContent)
+            let comic = Comic(jsonString: urlContent! as String)
+            
+            self.imageView.kf_setImageWithURL(NSURL(string: comic.imageString!)!)
             
             
 //                urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
