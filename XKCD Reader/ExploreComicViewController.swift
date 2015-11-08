@@ -122,12 +122,10 @@ class ExploreComicViewController: UIViewController, UIScrollViewDelegate {
             
             if error == nil {
                 
-            
-                
             urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 
-                
-            print(json)
+            print(urlContent)
+            
             
 //                urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
 //                
